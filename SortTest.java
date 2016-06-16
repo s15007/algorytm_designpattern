@@ -50,22 +50,6 @@ public class SortTest {
             data[i] = sfmt.NextInt(10000);
         }
     }
-
-    // ショータイム
-    private static void ショータイム() {
-        int[] aTest = new int[10];
-        generate(aTest);
-
-        out.print("SOURCE : ");
-        for (int num : aTest) out.print(num + " ");
-        out.println();
-
-        new java.util.Scanner(System.in).nextLine();
-        String[] ans = Sort.よぎソート(aTest);
-        out.print("SORTED : ");
-        for (String num : ans) out.print(num + " ");
-        out.println();
-    }
 }
 
 class Sort {
