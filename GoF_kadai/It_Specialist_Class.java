@@ -1,6 +1,6 @@
 public class It_Specialist_Class {
 	public static void main(String[] args) {
-		ClassRoom classRoom = new ClassRoom(11);
+		ClassRoom classRoom = new ClassRoom(10);
 		classRoom.appendName(new Student("はらぺこゆっきー"));
 		classRoom.appendName(new Student("ひろくん"));
 		classRoom.appendName(new Student("けいご"));
@@ -58,7 +58,7 @@ class ClassRoom implements Aggregate {
 		return new ClassRoomIterator(this);
 	}
 }
-
+	// ClassRoomを読み込むためのクラス
 class ClassRoomIterator implements Iterator {
 	private ClassRoom classRoom;
 	private int index;
@@ -73,6 +73,7 @@ class ClassRoomIterator implements Iterator {
 			return false;
 		}
 	}
+	// 現在の要素を返しつつ、つぎの位置へ進める
 	public Object next() {
 		Student student = classRoom.getNameAt(index);
 		index++;
