@@ -29,6 +29,7 @@ class Me {
 		System.out.println("\n└(ﾟ∀ﾟ└)ﾊｯｽﾙ!ﾊｯｽﾙ!!(┘ﾟ∀ﾟ)┘ ﾊｯｽﾙ!ﾊｯｽﾙ!!\n");
 	}
 }
+
 // 委譲を使ったAdapterパターン↓↓↓
 class CurrentFeeling extends MyFeelings {
 	private Me me;
