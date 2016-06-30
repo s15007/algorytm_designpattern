@@ -1,6 +1,6 @@
 public class Feelings {
 	public static void main(String[] args) {
-		CurrentFeeling now = new CurrentFeeling();
+		MyFeelings now = new CurrentFeeling();
 		now.angry();
 		now.happy();
 		now.sad();
